@@ -17,7 +17,7 @@ public class PilaMenu {
     // creamos metodo para apilar o insertar un elemento
     public void apilar(int elemento) {
         if (estaLlena()) {
-            System.out.println("La pila está llena.");
+            System.out.println("La pila esta llena.");
         } else {
             tope++;
             pila[tope] = elemento;
@@ -31,7 +31,7 @@ public class PilaMenu {
     // creamos metodo para desapilar un elemento
     public int desapilar() {
         if (estaVacia()) {
-            System.out.println("La pila está vacía.");
+            System.out.println("La pila esta vacia.");
             return -1;
         } else {
             int elemento = pila[tope];
@@ -46,7 +46,7 @@ public class PilaMenu {
     // creamos metodo para obtener el Tope de la pila
     public int obtenerTope() {
         if (estaVacia()) {
-            System.out.println("La pila está vacía.");
+            System.out.println("La pila esta vacia.");
             return -1; 
         } else {
             return pila[tope];
@@ -59,7 +59,7 @@ public class PilaMenu {
     // ahora creamos metodo para mostrar los elementos de la pila
     public void mostrarPila() {
         if (estaVacia()) {
-            System.out.println("La pila está vacía.");
+            System.out.println("La pila esta vacia.");
         } else {
             System.out.println("Elementos de la pila:");
             for (int i = tope; i >= 0; i--) {
