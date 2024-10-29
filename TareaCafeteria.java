@@ -6,10 +6,14 @@ class Pedido {
     private String nombreCliente;
     private String productos;
 
+    
+
     public Pedido(String nombreCliente, String productos) {
         this.nombreCliente = nombreCliente;
         this.productos = productos;
     }
+
+    
 
     public String getNombreCliente() {
         return nombreCliente;
@@ -19,11 +23,13 @@ class Pedido {
         return productos;
     }
 
-    @Override
+    
     public String toString() {
         return "Cliente: " + nombreCliente + ", Productos: " + productos;
     }
 }
+
+
 
 public class Cafeteria {
     private Queue<Pedido> pedidos;
@@ -58,6 +64,8 @@ public class Cafeteria {
         }
     }
 
+
+    
     public static void main(String[] args) {
         Cafeteria cafeteria = new Cafeteria();
         Scanner scanner = new Scanner(System.in);
